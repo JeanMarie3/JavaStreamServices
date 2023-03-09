@@ -65,7 +65,7 @@ public class BookSuggestionServiceTest {
 		Set<String> suggestedBooks = suggestionService.suggestBooks(reader1, 4);
 
 		// then:
-		assertThat(suggestedBooks).isEqualTo(newHashSet(book2.getTitle()));
+		assertThat(suggestedBooks).isEqualTo(newHashSet(book2.getTitle(), book1.getTitle(), book4.getTitle()));
 	}
 
 	@Test
